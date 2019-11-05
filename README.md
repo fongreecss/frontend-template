@@ -53,3 +53,5 @@ For development run: `gulp`. Upon finishing building it will launch a local serv
 For deployment (without watch and local server) run: `gulp build`.
 
 The environment can be set to production in the `.env`, by setting the `ENV` value to `production`. When set to production, css and js will be compressed. Make sure to test the production build before deployment.
+
+credits to: Martin Koterle 
