@@ -14,6 +14,8 @@
           {% include "/templates/components/text.twig" with { params: item } %}
         {% elseif item.acf_fc_layout == 'card-list' %}
           {% include "/templates/components/card-list.twig" with { params: item } %}
+        {% elseif item.acf_fc_layout == 'picture' %}
+          {% include "/templates/components/picture.twig" with { params: item } %}
         {% endif %}
 
       {% endfor %}
