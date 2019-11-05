@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+
+  {# If using Wordpress, you may remove this as Wordpress usually manages titles #}
+  <title>{{ post.title }}</title>
+
+  {# If no cookie #}
+  {# <link rel="preload" as="style" href="{{ manifest('assets/css/app.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="{{ manifest('assets/css/app.css') }}" rel="stylesheet"></noscript>
+  <script>
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+  </script> #}
+
+  {# TODO: Inline Critical CSS #}
+
+  {# else if cookie #}
+    {# <link href="{{ manifest('assets/css/app.css') }}" rel="stylesheet"> #}
+  {# endif #}
+
+  <link href="{{ manifest('assets/css/app.css') }}" rel="stylesheet">
+
+  {{ function('wp_head') }}
+
+  <script type="module" src="{{ manifest('assets/js/vendors.js') }}" defer></script>
+  <script type="module" src="{{ manifest('assets/js/app.js') }}" defer></script>
+
+  <script nomodule src="{{ manifest('assets/js/vendors-legacy.js') }}" defer></script>
+  <script nomodule src="{{ manifest('assets/js/app-legacy.js') }}" defer></script>
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  {% include 'templates/components/navigation.twig' %}
+
+  <div class="flex-grow">
+  {% block content %}{% endblock %}
+  </div>
+
+  <footer class="bg-gray-200">
+    <div class="container my-4 flex justify-between text-sm text-gray-600">
+      <span class="">&copy 2019</span>
+      <span class="cursor-pointer hover:text-black">To the top</span>
+    </div>
+  </footer>
+
+  {% include 'templates/components/cookie-notice.twig' %}
+
+  {{ function('wp_footer') }}
+
+</body>
+
+</html>

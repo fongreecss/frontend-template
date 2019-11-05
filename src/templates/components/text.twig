@@ -1,0 +1,20 @@
+{#
+  Section with text
+
+  We set a class .article to the div that contains wysiwyg content.
+  We have to extact styles in the css for the layout, so the html in
+  the content can be naked.
+
+  @param {string}  title
+  @param {wysiwyg} text
+#}
+
+{# Output #}
+<section class="container">
+  <div class="row">
+    <div class="col-12 md:col-7 my-16 mx-auto article">
+      <h1 class="text-3xl lg:text-5xl mb-4 md:mb-8 leading-tight">{{ params.title }}</h1>
+      {{ params.text|raw }}
+    </div>
+  </div>
+</section>

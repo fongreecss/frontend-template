@@ -1,0 +1,165 @@
+/**
+ * Cloud animation from left to right
+ **/
+
+@keyframes cloud-left-to-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(55vw, 0, 0) scale(1);
+  }
+}
+
+@keyframes cloud-left-to-right-long {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(75vw, 0, 0) scale(1);
+  }
+}
+
+@keyframes cloud-left-to-right-longer {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(3.6vw, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(90vw, 0, 0) scale(1);
+  }
+}
+
+@keyframes cloud-right-to-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-55vw, 0, 0) scale(1);
+  }
+}
+
+@keyframes cloud-right-to-left-long {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(-3vw, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-75vw, 0, 0) scale(1);
+  }
+}
+
+@keyframes cloud-right-to-left-longer {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  4% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-90vw, 0, 0) scale(1);
+  }
+}
+
+.cloud-left-to-right {
+  animation-name: cloud-left-to-right;
+}
+
+.cloud-left-to-right-long {
+  animation-name: cloud-left-to-right-long;
+}
+
+.cloud-left-to-right-longer {
+  animation-name: cloud-left-to-right-longer;
+}
+
+.cloud-right-to-left {
+  animation-name: cloud-right-to-left;
+}
+
+.cloud-right-to-left-long {
+  animation-name: cloud-right-to-left-long;
+}
+
+.cloud-right-to-left-longer {
+  animation-name: cloud-right-to-left-longer;
+}
+
+.animation-infinite-linear {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/**
+   * animation duration
+   **/
+.animation-duration-20s {
+  animation-duration: 20s;
+}
+
+.animation-duration-30s {
+  animation-duration: 30s;
+}
+
+.animation-duration-45s {
+  animation-duration: 45s;
+}
+
+.animation-duration-60s {
+  animation-duration: 60s;
+}
+
+/**
+   * animation delay
+   **/
+
+.animation-delay-0_5s {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-1s {
+  animation-delay: 1s;
+}
+
+.animation-delay-1_5s {
+  animation-delay: 1.5s;
+}
+
+.animation-delay-2s {
+  animation-delay: 2s;
+}
+
+.animation-delay-4s {
+  animation-delay: 4s;
+}

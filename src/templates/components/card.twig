@@ -1,0 +1,27 @@
+{#
+  Card
+
+  Data is loaded from a custom post
+
+  @param {string}  title
+  @param {string}  text
+  @param {string}  image
+  @param {array}   categories
+  {
+    @param {string}  title
+  }
+#}
+
+{# Output #}
+<div class="rounded overflow-hidden shadow-lg h-full flex flex-col">
+  <img class="w-full" data-src="{{ params.image }}" alt="{{ params.title }}">
+  <div class="px-6 py-4 flex-grow">
+    <div class="font-bold text-xl mb-2">{{ params.title }}</div>
+    <p class="text-gray-700 text-base">{{ params.text }}</p>
+  </div>
+  <div class="px-6 py-4">
+    {% for item in params.categories %}
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{{ item.title }}</span>
+    {% endfor %}
+  </div>
+</div>

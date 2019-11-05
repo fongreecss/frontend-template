@@ -1,0 +1,16 @@
+{#
+  Cookie notice
+
+  Data is loaded from the global options field
+
+  @param {wysiwyg} content
+  @param {string}  cta
+#}
+
+{# Output #}
+<div id="cookieContainer" class="hidden sticky bottom-0 w-screen z-20 py-4 bg-gray-200">
+  <div class="container flex justify-between items-center">
+    <span class="flex-shrink text-gray-800 mr-12">{{ options.cookie.content }}</span>
+    <button id="cookieClose" class="flex-grow button">{{ options.cookie.cta }}</button>
+  </div>
+</div>

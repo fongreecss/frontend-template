@@ -1,0 +1,21 @@
+{#
+  Card List
+
+  Data is passed onto each card
+
+  @param {array}   items
+  {
+    See card.twig
+  }
+#}
+
+{# Output #}
+<section class="container my-8">
+  <div class="row">
+    {% for item in params.items %}
+    <div class="col-12 md:col-6 lg:col-4 mb-6">
+      {% include '/templates/components/card.twig' with { params: item } %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

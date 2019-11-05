@@ -1,0 +1,50 @@
+{#
+  Main menu navigation
+
+  Data is loaded from the global menu field
+
+  @param {array} items
+  {
+    @param {string}  title
+    @param {string}  url
+  }
+  @param {object}  cta
+  {
+    @param {string}  title
+    @param {string}  url
+  }
+#}
+
+{# Output #}
+<nav class="navigation bg-gray-300 p-6 sticky top-0 z-10">
+  <div class="container h-full flex items-center justify-between flex-wrap">
+    <div class="flex items-center text-gray-800 mr-6">
+      <span class="font-semibold text-xl tracking-tight">Brand</span>
+    </div>
+    <div class="block lg:hidden">
+      <button id="navigationToggle"
+        class="flex items-center px-3 py-2 rounded bg-white hover:shadow">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="navigation__items w-full h-full lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow lg:mr-8">
+        {% for item in navigation.items %}
+        <a href="{{ item.url }}" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-4">
+          {{ item.title }}
+        </a>
+        {% endfor %}
+      </div>
+      {% if navigation.cta %}
+      <div class="fixed bottom-0 my-8 lg:my-0 lg:static">
+        <a href="{{ navigation.cta.url }}"
+          class="inline-block button">{{ navigation.cta.title }}</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+</nav>

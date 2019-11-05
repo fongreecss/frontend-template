@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=latin-ext');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@import "animation";
+@import "./components/button";
+@import "./components/navigation";
+@import "./components/article";
+
+
+html, body {
+  overflow-x:hidden;
+  color:#000;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  font-family: "Ubuntu";
+  overflow:hidden;
+}
