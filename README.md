@@ -121,12 +121,6 @@ MacOS/Linux
 ## Theme
 By default the theme has some boilerplate to get you going faster. Feel free to remove the extra features. Make sure to check https://timber.github.io/docs/ for extra information regarding Timber.
 
-## Plugins
-Some plugins are already included:
- - Timber (required)
- - Yoast SEO
- - W3 Total Cache
- - Disable Emojis
 
 Installing new plugins is done via composer. They are added via https://wpackagist.org/ composer repository.
 
@@ -144,14 +138,14 @@ Custom plugins are also installed via composer, but it requires some additional 
     …
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:cnjargeta/gigya-form-plugin.git"
+      "url": "git@bitbucket.org:nekineki/gigya-form-plugin.git"
     },
     …
   ],
 }
 ```
 
-After that you can add the plugin using composer require: `composer require cnj/gigya-form-plugin`.
+After that you can add the plugin using composer require: `composer require nekineki/gigya-form-plugin`.
 
 Make sure the plugin has a `composer.json` setup correctly.
 
