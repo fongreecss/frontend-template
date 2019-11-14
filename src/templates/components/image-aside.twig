@@ -7,12 +7,13 @@
   @param {string}  title
   @param {wysiwyg} text
   @param {string} image     image url
+  @param {string} image_first       default set on false
 #}
 
 {# Output #}
 <section class="c-image-aside container">
   <div class="row flex items-center">
-    <div class="col-12 lg:col-5 order-1 lg:order-2">
+    <div class="col-12 lg:col-5 order-0 {{ params.image_first == true ? 'lg:order-1' : 'lg:order-0'}}">
       {% if params.title %}
       <h2 class="text-3xl lg:text-4xl mb-4 lg:mb-8 leading-tight">{{ params.title }}</h2>
       {% endif %}
@@ -22,7 +23,9 @@
     </div>
      <div class="col-12 lg:col-7 mb-4 lg:mb-8">
       {% if params.image %}
-        <img data-src="{{ params.image }}" alt="" class="object-cover w-full h-full" >
+        <div class="w-full h-full">
+            <img data-src="{{ params.image }}" alt="" class="object-cover w-full h-full" >
+        </div>
       {% endif %}
     </div>
   </div>
