@@ -1,0 +1,14 @@
+{
+    "name": "wordpress-template",
+    "description": "Wordpress template for deployment on Dokku/Heroku.",
+    "keywords": [
+        "wordpress",
+        "dokku",
+        "heroku"
+    ],
+    "scripts": {
+        "dokku": {
+            "predeploy": "./predeploy.sh"
+        }
+    }
+}

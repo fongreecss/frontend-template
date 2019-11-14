@@ -10,12 +10,7 @@
         {{ dump(index.content) }}
         {% if index.content|length %}
           {% for item in index.content %}
-
-            
               {% include "/templates/components/" ~ item.acf_fc_layout ~ ".twig" with { params: item } %}
-            
-            
-
         {% endfor %}
       {% endif %}
 
