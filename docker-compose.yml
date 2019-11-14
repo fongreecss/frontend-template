@@ -1,0 +1,77 @@
+version: '3.6'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: ${SITE_NAME}-nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./config/docker/nginx:/etc/nginx/conf.d:cached
+      - ./:/var/www:cached
+    depends_on:
+      - wordpress
+    restart: unless-stopped
+    tty: true
+    networks:
+      - app-network
+
+  mysql:
+    image: mariadb
+    container_name: ${SITE_NAME}-mysql
+    volumes:
+      - ./docker/db:/docker-entrypoint-initdb.d
+      - dbdata:/var/lib/mysql/:rw,cached
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=app
+    restart: always
+    tty: true
+    ports:
+      - '3306:3306'
+    networks:
+      - app-network
+
+  wordpress:
+    image: wordpress:php7.3-fpm
+    container_name: ${SITE_NAME}-wordpress
+    volumes:
+      - ./:/var/www:rw,cached
+    environment:
+      - WORDPRESS_DB_NAME=${DB_NAME}
+      - WORDPRESS_TABLE_PREFIX=wp_
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_USER=${DB_USER}
+      - WORDPRESS_DB_PASSWORD=${DB_PASSWORD}
+    depends_on:
+      - mysql
+    restart: always
+    tty: true
+    networks:
+      - app-network
+
+  composer:
+    image: composer
+    container_name: ${SITE_NAME}-composer
+    working_dir: /var/www
+    restart: 'no'
+    volumes:
+      - ./:/var/www:rw,cached
+
+  adminer:
+    image: adminer
+    container_name: ${SITE_NAME}-adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local
