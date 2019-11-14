@@ -77,6 +77,7 @@ module.exports = {
       '24': '6rem',
       '28': '7rem',
       '32': '8rem',
+      '36': '9rem',
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
@@ -594,5 +595,6 @@ module.exports = {
     require('tailwindcss-transforms')({
       '3d': false, // defaults to false
     }),
+    require('@tailwindcss/custom-forms'),
   ],
 }

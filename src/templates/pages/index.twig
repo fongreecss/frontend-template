@@ -7,7 +7,6 @@
         {# Wordpress flexible layout sample #}
         {# If possible design each component so it works with any other component aligned next #}
         {# This allows creating only 1 page, everything else can be done in the backend #}
-        {{ dump(index.content) }}
         {% if index.content|length %}
           {% for item in index.content %}
               {% include "/templates/components/" ~ item.acf_fc_layout ~ ".twig" with { params: item } %}
