@@ -10,12 +10,7 @@
     },
     "index": {
         "content": [
-            {
-                "acf_fc_layout": "image-aside",
-                "title": "Win-win quarterly sales are at an all-time low",
-                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
-                "image" : "https://picsum.photos/id/27/900/600"
-            },
+            
             {
                 "acf_fc_layout": "text",
                 "title": "Win-win quarterly sales are at an all-time low",
@@ -29,6 +24,12 @@
             {
                 "acf_fc_layout": "text",
                 "text" : "Draw a line in the sand that's mint, well done are we in agreeance window of opportunity it's a simple lift and shift job. Organic growth the horse is out of the barn for window-licker ultimate measure of success. Meeting assassin high performance keywords so are we in agreeance diversify kpis going forward. We're ahead of the curve on that one we need to leverage our synergies, so touch base nor window-licker. Shoot me an email. Personal development synergestic actionables. Take five, punch the tree, and come back in here with a clear head."
+            },
+            {
+                "acf_fc_layout": "image-aside",
+                "title": "Win-win quarterly sales are at an all-time low",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "image" : "https://picsum.photos/id/27/900/600"
             },
             {
                 "acf_fc_layout": "card-list",
