@@ -1,1 +1,29 @@
-neki neki
+{#
+  Section with text and image aside
+
+  We have to extact styles in the css for the layout, so the html in
+  the content can be naked.
+
+  @param {string}  title
+  @param {wysiwyg} text
+  @param {string} image     image url
+#}
+
+{# Output #}
+<section class="c-image-aside container">
+  <div class="row flex items-center">
+    <div class="col-12 lg:col-5">
+      {% if params.title %}
+      <h2 class="text-3xl lg:text-4xl mb-4 lg:mb-8 leading-tight">{{ params.title }}</h2>
+      {% endif %}
+      {% if params.text %}
+      <div class="mb-4 lg:mb-8">{{ params.text|raw }}</div>
+      {% endif %}
+    </div>
+     <div class="col-12 lg:col-7 mb-4 lg:mb-8">
+      {% if params.image %}
+        <img data-src="{{ params.image }}" alt="" class="object-cover w-full h-full" >
+      {% endif %}
+    </div>
+  </div>
+</section>
