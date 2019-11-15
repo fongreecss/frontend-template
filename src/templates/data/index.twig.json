@@ -31,6 +31,31 @@
                 "image" : "https://picsum.photos/id/27/900/600"
             },
             {
+                "acf_fc_layout": "sticky-aside",
+                "enable_scrollspy" : true,
+                "title": "Win-win quarterly sales are at an all-time low",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "items" : [
+                    {
+                        "title" : "Workflow ecosystem rock",
+                        "text": "Conversational content translating our vision of having a market leading platfrom who's the goto on this job with the way forward nor not enough bandwidth churning anomalies nor proceduralize."
+                    },
+                    {
+                        "title" : "Beef up granularity",
+                        "text": "Performance review. Are we in agreeance make sure to include in your wheelhouse."
+                        
+                    },
+                    {
+                        "title" : "Bunny no scraps hit the floor",
+                        "text": "Run it up the flagpole, ping the boss and circle back looks great, can we try it a different way, so deploy to production feature creep we need to build it so that it scales."
+                    },
+                    {
+                        "title" : "Digital literacy",
+                        "text": "I don't want to drain the whole swamp, i just want to shoot some alligators optimize for search. Make sure to include in your wheelhouse focus on the customer journey radical candor."
+                    }
+                ]
+            },
+            {
                 "acf_fc_layout": "card-list",
 
                 "items": [
@@ -57,8 +82,7 @@
                             },
                             {
                                 "title": "mobile"
-                            }
-                            ,
+                            },
                             {
                                 "title": "work"
                             }

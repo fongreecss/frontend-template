@@ -15,13 +15,16 @@
 
 
 html, body {
-  overflow-x:hidden;
   color:#000;
   scroll-behavior: smooth;
+  
+}
+
+html {
+ // overflow-x: hidden;
 }
 
 body {
   @apply antialiased;
   font-family: "Ubuntu";
-  overflow:hidden;
 }
