@@ -23,7 +23,7 @@
 <section class="c-sticky-aside container">
   <div class="row">
     <div class="col-12 lg:col-5 order-0 {{ params.sticky_first == true ? 'lg:order-1' : 'lg:order-0' }}">
-      <div class="sticky top-0">
+      <div class="sticky top-8 mb-16 lg:mb-24">
       {% if params.title %}
       <h2 class="text-3xl lg:text-4xl mb-4 lg:mb-8 leading-tight">{{ params.title }}</h2>
       {% endif %}
@@ -41,7 +41,12 @@
     </div>
      <div class="col-12 lg:col-7 mb-4 lg:mb-8">
       {% for item in params.items %}
-        <section>
+        <section class="mb-12 lg:mb-26">
+            {% if item.image %}
+            <div class="mb-4 lg:mb-8">
+              <img data-src="{{ item.image }}" alt="{{ item.title }}" class="w-full h-auto">
+            </div>
+            {% endif %}
             {% if item.title %}
             <h3 class="text-3xl lg:text-2xl mb-4 lg:mb-8 leading-tight">{{ item.title }}</h3>
             {% endif %}
