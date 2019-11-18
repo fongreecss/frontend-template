@@ -20,6 +20,9 @@
       {% if params.text %}
       <div class="mb-4 lg:mb-8">{{ params.text|raw }}</div>
       {% endif %}
+      {% if params.cta|length %}
+      <a href="{{ params.cta.link }}" class="inline-block button mb-4 lg:mb-8">{{ params.cta.title }}</a>
+      {% endif %}
     </div>
      <div class="col-12 lg:col-7 mb-4 lg:mb-8">
       {% if params.image %}

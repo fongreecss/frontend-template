@@ -15,7 +15,7 @@
             </div>
             {% elseif params.url %}
             <div>
-                <video width="320" height="240" class="w-full h-auto" onmouseover="this.setAttribute('controls', 'controls');" onmouseleave="this.removeAttribute('controls');">
+                <video width="640" height="480" class="w-full h-auto" onmouseover="this.setAttribute('controls', 'controls');" onmouseleave="this.removeAttribute('controls');">
                 <source src="{{ params.url }}" type="video/mp4">
             </div>
             {% endif %}
