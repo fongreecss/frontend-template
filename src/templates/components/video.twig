@@ -1,15 +1,17 @@
 {#
-  Section with video
+    Section with video
 
-  @param {string}  id       video id
-  @param {string}  caption
+    @param {string}  id       video id
+    @param {string}  caption
 #}
 
 {# Output #}
 <section class="c-video container">
-  <div class="row">
-    <div class="col-12 lg:offset-2 lg:col-8 xl:offset-3 xl:col-6 mb-4 lg:mb-8">
-      <div id="video-{{ params.id }}" data-yt-video="{{ params.id }}" class="max-w-full"></div>
+    <div class="row">
+        <div class="col-12 lg:offset-2 lg:col-8 xl:offset-3 xl:col-6 mb-4 lg:mb-8">
+            <div class="yt-video-wrapper">
+                <div id="video-{{ params.id }}" data-yt-video="{{ params.id }}" class="yt-video max-w-full"></div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
