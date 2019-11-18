@@ -4,7 +4,8 @@ import Parallax from "./components/parallax";
 import Slider from "./components/slider";
 import InViewport from './components/inviewport';
 import Gumshoe from 'gumshoejs';
-import YTPlayer from 'yt-player';
+import YoutubePlayer from './components/youtube-player';
+import tns from 'tiny-slider';
 //import lazySizes from 'lazysizes';
 
 /** load images that are not in viewport 
@@ -15,6 +16,7 @@ window.addEventListener('load', ()=> {
   document.querySelectorAll('img[data-src]').forEach((el) => {
      el.src = el.dataset.src;
   });
+  new YoutubePlayer();
 }, false);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,22 +28,4 @@ document.addEventListener('DOMContentLoaded', () => {
   new InViewport();
   new Slider('.x-slider__wrapper');
   new Gumshoe('.scrollspy');
-  document.querySelectorAll('[data-yt-video]').forEach(function(el) {
-    console.log(el.dataset.ytVideo);
-    let player = new YTPlayer( '#' + el.id, {
-      controls: 0,
-      info: 0,
-      related: 0,
-      annotations: 0,
-      captions: 0,
-      modestBranding: 1,
-      playerVars: {
-        rel: 0,
-        showinfo: 0,
-        ecver: 2
-      }
-    });
-    player.load(el.dataset.ytVideo);
-  });
-  
 }, false);
