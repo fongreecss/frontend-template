@@ -43,6 +43,7 @@
     "gulp-string-replace": "^1.1.2",
     "gulp-twig": "^1.2.0",
     "gulp-watch": "^5.0.1",
+    "gumshoejs": "^5.1.2",
     "include-media": "^1.4.9",
     "js-cookie": "^2.2.1",
     "lazysizes": "^5.1.2",
