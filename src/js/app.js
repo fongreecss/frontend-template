@@ -3,6 +3,7 @@ import Navigation from "./components/navigation";
 import Parallax from "./components/parallax";
 import Slider from "./components/slider";
 import InViewport from './components/inviewport';
+import Gumshoe from 'gumshoejs';
 //import lazySizes from 'lazysizes';
 
 /** load images that are not in viewport 
@@ -23,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
   new Parallax();
   new InViewport();
   new Slider('.x-slider__wrapper');
+  new Gumshoe('.scrollspy');
 }, false);

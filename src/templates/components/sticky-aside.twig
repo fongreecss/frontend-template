@@ -33,7 +33,7 @@
       {% if params.enable_scrollspy == true %}
       <ul>
         {% for item in params.items %}
-        <li><a href="#" class="block py-2"><span class="inline-block mr-4">{{ loop.index < 10 ? '0' : '' }}{{ loop.index }}.</span>{{ item.title }}</a>
+        <li><a href="#{{ item.title|replace({ ' ': '-' })|lower }}" class="scrollspy block py-2"><span class="inline-block mr-4">{{ loop.index < 10 ? '0' : '' }}{{ loop.index }}.</span>{{ item.title }}</a>
         {% endfor %}
       </ul>
       {% endif %}
@@ -41,7 +41,7 @@
     </div>
      <div class="col-12 lg:col-7 mb-4 lg:mb-8">
       {% for item in params.items %}
-        <section class="mb-12 lg:mb-26">
+        <section id="{{ item.title|replace({ ' ': '-' })|lower }}" class="mb-12 lg:mb-26">
             {% if item.image %}
             <div class="mb-4 lg:mb-8">
               <img data-src="{{ item.image }}" alt="{{ item.title }}" class="w-full h-auto">
