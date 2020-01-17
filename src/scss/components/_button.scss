@@ -5,3 +5,55 @@
     @apply shadow;
   }
 }
+
+.button--orange {
+  @apply bg-orange-100;
+}
+
+.button-bg-lg,
+.button-bg-md,
+.button-bg-sm,
+.lg\:button-bg-md {
+  background-size: 100% 100%;
+  min-width: 142px;
+}
+.button-bg-lg {
+  background-image: url(/assets/images/buttons/button_lg-s.svg);
+}
+
+.button-bg-md {
+  background-image: url(/assets/images/buttons/button_md-s.svg);
+}
+
+.button-bg-sm {
+  background-image: url(/assets/images/buttons/button_sm-s.svg);
+}
+
+@screen lg {
+.lg\:button-bg-md {
+    background-image: url(/assets/images/buttons/button_md-s.svg);
+  }
+}
+
+
+.hero-button {
+  @screen lg {
+      font-size: 1.25vw;
+      padding: 1.25vw 1.65vw;
+  }
+}
+
+.shadow-button {
+  filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.75));
+}
+
+.hero-shadow-button {
+  filter: drop-shadow(0px 4px 0px #0F364C);
+  @screen lg {
+    filter: drop-shadow(0px 0.25vw 0px #0F364C);
+  }
+}
+
+.text-shadow-button {
+  text-shadow: 0px 1px 0px #0F364C;
+}
