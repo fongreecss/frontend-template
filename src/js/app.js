@@ -4,8 +4,10 @@ import Parallax from "./components/parallax";
 import Slider from "./components/slider";
 import InViewport from './components/inviewport';
 import Gumshoe from 'gumshoejs';
+//this is actually just a wrapper around yt-player
 import YoutubePlayer from './components/youtube-player';
-import tns from 'tiny-slider';
+import TinySlider from "./components/tiny-slider";
+
 //import lazySizes from 'lazysizes';
 
 /** load images that are not in viewport 
@@ -16,7 +18,6 @@ window.addEventListener('load', ()=> {
   document.querySelectorAll('img[data-src]').forEach((el) => {
      el.src = el.dataset.src;
   });
-  new YoutubePlayer();
 }, false);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,4 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new InViewport();
   new Slider('.x-slider__wrapper');
   new Gumshoe('.scrollspy');
+  new YoutubePlayer();
+  new TinySlider();
+  
 }, false);
