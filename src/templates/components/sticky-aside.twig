@@ -44,7 +44,7 @@
         <section id="{{ item.title|replace({ ' ': '-' })|lower }}" class="mb-12 lg:mb-26">
             {% if item.image %}
             <div class="mb-4 lg:mb-8">
-              <img data-src="{{ item.image }}" alt="{{ item.title }}" class="w-full h-auto">
+              <img src="{{ item.image }}" loading="lazy" alt="{{ item.title }}" class="w-full h-auto">
             </div>
             {% endif %}
             {% if item.title %}
