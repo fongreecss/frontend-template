@@ -1,0 +1,27 @@
+{#
+  Section with slider
+
+  @param {array}  items {  
+      @param {string} image
+      @param {straing} text
+      @param {object} cta {
+          @param {string} title
+          @param {string} link
+      }
+  }
+#}
+
+{# Output #}
+{% if params.items|length %}
+<section class="c-slider container">
+  <div class="row tns-slider">
+    
+        {% for item in params.items %}
+        <div class="col-12 lg:col-4 mb-4 lg:mb-8">
+            <img class="tns-lazy-img" src="{{ item.image }}" >
+            </div>
+        {% endfor %}
+    
+  </div>
+</section>
+{% endif %}

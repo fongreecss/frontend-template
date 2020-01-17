@@ -133,6 +133,34 @@
                         ]
                     }
                 ]
+            },
+            {
+                "acf_fc_layout": "slider",
+                "title": "Win-win quarterly sales are at an all-time low",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "items" : [
+                    {
+                        "title" : "Workflow ecosystem rock",
+                        "image" : "//via.placeholder.com/900x600",
+                        "text": "Conversational content translating our vision of having a market leading platfrom who's the goto on this job with the way forward nor not enough bandwidth churning anomalies nor proceduralize."
+                    },
+                    {
+                        "title" : "Beef up granularity",
+                        "image" : "//via.placeholder.com/900x600",
+                        "text": "Performance review. Are we in agreeance make sure to include in your wheelhouse."
+                        
+                    },
+                    {
+                        "title" : "Bunny no scraps hit the floor",
+                        "image" : "//via.placeholder.com/900x600",
+                        "text": "Run it up the flagpole, ping the boss and circle back looks great, can we try it a different way, so deploy to production feature creep we need to build it so that it scales."
+                    },
+                    {
+                        "title" : "Digital literacy",
+                        "image" : "//via.placeholder.com/900x600",
+                        "text": "I don't want to drain the whole swamp, i just want to shoot some alligators optimize for search. Make sure to include in your wheelhouse focus on the customer journey radical candor."
+                    }
+                ]
             }
         ]
     }

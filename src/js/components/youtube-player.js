@@ -1,10 +1,6 @@
+
 /**
- * ADD html attributes to elements
- * All data attributes:
- * data-min - parallax minimum transformY value
- * data-max - parallax maximum transfromY value 
- * data-speed - parallax speed that also determines direction
- * data-is-svg - specify if we are transforming element inside svg. 
+ * 
  */
 import YTPlayer from 'yt-player';
 export default class YoutubePlayer {
@@ -29,4 +25,3 @@ export default class YoutubePlayer {
           });
     }
   }
-  
