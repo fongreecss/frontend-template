@@ -17,41 +17,27 @@
   background-size: 100% 100%;
   min-width: 142px;
 }
+
 .button-bg-lg {
-  background-image: url(/assets/images/buttons/button_lg-s.svg);
+  background-image: url(/assets/images/buttons/button-lg.svg);
 }
 
 .button-bg-md {
-  background-image: url(/assets/images/buttons/button_md-s.svg);
+  background-image: url(/assets/images/buttons/button-md.svg);
 }
 
 .button-bg-sm {
-  background-image: url(/assets/images/buttons/button_sm-s.svg);
+  background-image: url(/assets/images/buttons/button-sm.svg);
 }
 
 @screen lg {
 .lg\:button-bg-md {
-    background-image: url(/assets/images/buttons/button_md-s.svg);
-  }
-}
-
-
-.hero-button {
-  @screen lg {
-      font-size: 1.25vw;
-      padding: 1.25vw 1.65vw;
+    background-image: url(/assets/images/buttons/button-md.svg);
   }
 }
 
 .shadow-button {
   filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.75));
-}
-
-.hero-shadow-button {
-  filter: drop-shadow(0px 4px 0px #0F364C);
-  @screen lg {
-    filter: drop-shadow(0px 0.25vw 0px #0F364C);
-  }
 }
 
 .text-shadow-button {
