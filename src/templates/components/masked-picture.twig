@@ -3,11 +3,15 @@
 
   @param {string}  image - should be contained inside mask
   @param {wysiwyg} text
-  @param {link}    cta
+  @param {object}    cta 
+  {
+    @param {string} title
+    @param {url} url
+  }
 #}
 
 {# Output #}
-<section class="c-svg-masked-picture container">
+<section class="c-masked-picture container">
   <div class="row flex items-center justify-center">
     <div class="col-12 lg:offset-2 lg:col-8 {{ params.cta or params.text ? 'mb-6 lg:mb-16' : 'mb-12 lg:mb-16' }}">
         <svg style="min-height:368px;" width="849" height="528" viewBox="0 0 849 528" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-full h-auto">
