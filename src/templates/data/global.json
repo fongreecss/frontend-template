@@ -20,6 +20,10 @@
                     {
                         "title" : "sticky aside",
                         "url" : "/sticky-aside.html"
+                    },
+                    {
+                        "title" : "image aside",
+                        "url" : "/image-aside.html"
                     }
                 ]
             },
