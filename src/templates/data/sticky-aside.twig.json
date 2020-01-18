@@ -11,15 +11,10 @@
     "stickyAside": {
         "content": [
             {
-                "acf_fc_layout": "text",
-                "title": "This is a sticky aside component",
-                "text": "This component has sticky menu aside with scrollspy functionality. On the right side is content. There should also be switching sides compatibility."
-            },
-            {
                 "acf_fc_layout": "sticky-aside",
                 "enable_scrollspy" : true,
-                "title": "Win-win quarterly sales are at an all-time low",
-                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "title": "This is a sticky aside component",
+                "text": "This component has sticky menu aside with scrollspy functionality. On the right side is content. There should also be switching sides compatibility.",
                 "items" : [
                     {
                         "title" : "Workflow ecosystem rock",
