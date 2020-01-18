@@ -1,0 +1,36 @@
+{
+    "post": {
+        "title": "Components/Image Aside",
+        "thumbnail": "",
+        "date": "",
+        "author": {
+            "first_name": "Janez",
+            "last_name": "Novak"
+        }
+    },
+    "imageAside": {
+        "content": [
+            {
+                "acf_fc_layout": "image-aside",
+                "title": "Image on the right with text on the left",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "image" : "https://picsum.photos/id/27/900/600",
+                "cta" : {
+                    "title" : "cta title",
+                    "link" : "#"
+                }
+            },
+            {
+                "acf_fc_layout": "image-aside",
+                "title": "Image on the left with text on the right",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers.",
+                "image" : "https://picsum.photos/id/200/900/600",
+                "image_first" : true,
+                "cta" : {
+                    "title" : "cta title",
+                    "link" : "#"
+                }
+            }
+        ]
+    }
+}
