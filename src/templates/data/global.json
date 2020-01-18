@@ -52,6 +52,12 @@
         "cookie": {
             "content": "Hard stop. Root-and-branch review <strong>proceduralize</strong>, so work. What about <em>scaling</em> components to a global audience? thought shower, quick win, and low hanging fruit and big boy pants or prairie dogging build on a culture of contribution and inclusion.",
             "cta": "Close"
+        },
+        "logo" : {
+            "type" : "image",
+            "url" : "/",
+            "image" : "http://via.placeholder.com/123x33",
+            "image_mobile" : "http://via.placeholder.com/123x33"
         }
     }
 }
