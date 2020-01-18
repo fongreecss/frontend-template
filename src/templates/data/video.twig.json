@@ -1,0 +1,32 @@
+{
+    "post": {
+        "title": "Components/Video",
+        "thumbnail": "",
+        "date": "",
+        "author": {
+            "first_name": "Janez",
+            "last_name": "Novak"
+        }
+    },
+    "video": {
+        "content": [
+            {
+                "acf_fc_layout": "text",
+                "title": "Youtube video player example"
+            },{
+                "acf_fc_layout": "video",
+                "id" : "v-t15Cc8NZw",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers. Five-year strategic plan bottleneck mice innovation is hot right now. Quarterly sales are at an all-time low it's a simple lift and shift job. I just wanted to give you a heads-up blue sky pulling teeth if you could do that, that would be great. In this space let's not solutionize this right now parking lot it. Punter nobody's fault it could have been managed better for 60% to 30% is a lot of persent who's responsible for the ask for this request?. Blue sky thinking downselect nor value prop. We've got to manage that low hanging fruit five-year strategic plan for what the. Re-inventing the wheel. Put in in a deck for our standup today keep it lean so going forward no scraps hit the floor, so put in in a deck for our standup today and prioritize these line items. Put in in a deck for our standup today rehydrate the team, are there any leftovers in the kitchen?, and powerPointless, technologically savvy. We need to get all stakeholders up to speed and in the right place churning anomalies, yet where do we stand on the latest client ask, and rehydrate the team. Win-win-win put your feelers out, but low-hanging fruit, for UX, for let me know if you need me to crack any skulls yet hit the ground running."
+            },
+            {
+                "acf_fc_layout": "text",
+                "title": "Html5 video player example"
+            },
+            {
+                "acf_fc_layout": "video",
+                "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "text": "Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers. Five-year strategic plan bottleneck mice innovation is hot right now. Quarterly sales are at an all-time low it's a simple lift and shift job. I just wanted to give you a heads-up blue sky pulling teeth if you could do that, that would be great. In this space let's not solutionize this right now parking lot it. Punter nobody's fault it could have been managed better for 60% to 30% is a lot of persent who's responsible for the ask for this request?. Blue sky thinking downselect nor value prop. We've got to manage that low hanging fruit five-year strategic plan for what the. Re-inventing the wheel. Put in in a deck for our standup today keep it lean so going forward no scraps hit the floor, so put in in a deck for our standup today and prioritize these line items. Put in in a deck for our standup today rehydrate the team, are there any leftovers in the kitchen?, and powerPointless, technologically savvy. We need to get all stakeholders up to speed and in the right place churning anomalies, yet where do we stand on the latest client ask, and rehydrate the team. Win-win-win put your feelers out, but low-hanging fruit, for UX, for let me know if you need me to crack any skulls yet hit the ground running."
+            }
+        ]
+    }
+}

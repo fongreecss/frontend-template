@@ -2,8 +2,22 @@
     "navigation": {
         "items": [
             {
-                "title": "Strategy",
-                "url": "#"
+                "title": "Components",
+                "url": "#",
+                "items" : [
+                    {
+                        "title" : "text",
+                        "url" : "/text.html"
+                    },
+                    {
+                        "title" : "picture",
+                        "url" : "/picture.html"
+                    },
+                    {
+                        "title" : "video",
+                        "url" : "/video.html"
+                    }
+                ]
             },
             {
                 "title": "Documentation",
