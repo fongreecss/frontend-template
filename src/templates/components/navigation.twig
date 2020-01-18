@@ -19,7 +19,11 @@
 <nav class="c-navigation navigation bg-gray-300 p-6 absolute top-0 left-0 w-full z-10">
   <div class="container h-full flex items-center justify-between flex-wrap">
     <div class="flex items-center text-gray-800 mr-6">
-      <span class="font-semibold text-xl tracking-tight text-gray-900">Brand</span>
+      {% if options.logo.type == "text" %}
+      <a href="{{ options.logo.url }}" class="font-semibold text-xl tracking-tight text-gray-900">{{ options.logo.text }}</a>
+      {% elseif options.logo.type == "image" %}
+      <a href="{{ options.logo.url }}" class="outline-none"><img src="{{ options.logo.image }}" class="" alt="{{ options.logo.text }}" /></a>
+      {% endif %}
     </div>
     <div class="block lg:hidden">
       <button id="navigationToggle"
