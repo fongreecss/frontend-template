@@ -16,6 +16,10 @@
                     {
                         "title" : "video",
                         "url" : "/video.html"
+                    }, 
+                    {
+                        "title" : "sticky aside",
+                        "url" : "/sticky-aside.html"
                     }
                 ]
             },
