@@ -6,24 +6,28 @@
                 "url": "#",
                 "items" : [
                     {
-                        "title" : "text",
+                        "title" : "Text",
                         "url" : "/text.html"
                     },
                     {
-                        "title" : "picture",
+                        "title" : "Picture",
                         "url" : "/picture.html"
                     },
                     {
-                        "title" : "video",
+                        "title" : "Video",
                         "url" : "/video.html"
                     }, 
                     {
-                        "title" : "sticky aside",
+                        "title" : "Sticky aside",
                         "url" : "/sticky-aside.html"
                     },
                     {
-                        "title" : "image aside",
+                        "title" : "Image aside",
                         "url" : "/image-aside.html"
+                    },
+                    {
+                        "title" : "Card list",
+                        "url" : "/card-list.html"
                     }
                 ]
             },
