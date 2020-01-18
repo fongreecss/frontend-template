@@ -1,0 +1,33 @@
+{
+    "post": {
+        "title": "Components/Text",
+        "thumbnail": "",
+        "date": "",
+        "author": {
+            "first_name": "Janez",
+            "last_name": "Novak"
+        }
+    },
+    "text": {
+        "content": [
+            {
+                "acf_fc_layout": "text",
+                "title": "Text component with title and text",
+                "text": "This is text. Translating our vision of having a market leading platfrom let's not solutionize this right now parking lot it. Fire up your browser cross sabers. Five-year strategic plan bottleneck mice innovation is hot right now. Quarterly sales are at an all-time low it's a simple lift and shift job. I just wanted to give you a heads-up blue sky pulling teeth if you could do that, that would be great. In this space let's not solutionize this right now parking lot it. Punter nobody's fault it could have been managed better for 60% to 30% is a lot of persent who's responsible for the ask for this request?. Blue sky thinking downselect nor value prop. We've got to manage that low hanging fruit five-year strategic plan for what the. Re-inventing the wheel. Put in in a deck for our standup today keep it lean so going forward no scraps hit the floor, so put in in a deck for our standup today and prioritize these line items. Put in in a deck for our standup today rehydrate the team, are there any leftovers in the kitchen?, and powerPointless, technologically savvy. We need to get all stakeholders up to speed and in the right place churning anomalies, yet where do we stand on the latest client ask, and rehydrate the team. Win-win-win put your feelers out, but low-hanging fruit, for UX, for let me know if you need me to crack any skulls yet hit the ground running."
+            },
+            {
+                "acf_fc_layout": "text",
+                "title": "Text component with title, text and cta",
+                "text" : "There is only text without title and cta. Draw a line in the sand that's mint, well done are we in agreeance window of opportunity it's a simple lift and shift job. Organic growth the horse is out of the barn for window-licker ultimate measure of success. Meeting assassin high performance keywords so are we in agreeance diversify kpis going forward. We're ahead of the curve on that one we need to leverage our synergies, so touch base nor window-licker. Shoot me an email. Personal development synergestic actionables. Take five, punch the tree, and come back in here with a clear head.",
+                "cta" : {
+                    "title" : "cta title",
+                    "url" : "#"
+                }
+            },
+            {
+                "acf_fc_layout": "text",
+                "text" : "There is only text here (and some aditional text). Draw a line in the sand that's mint, well done are we in agreeance window of opportunity it's a simple lift and shift job. Organic growth the horse is out of the barn for window-licker ultimate measure of success. Meeting assassin high performance keywords so are we in agreeance diversify kpis going forward. We're ahead of the curve on that one we need to leverage our synergies, so touch base nor window-licker. Shoot me an email. Personal development synergestic actionables. Take five, punch the tree, and come back in here with a clear head."
+            }
+        ]
+    }
+}

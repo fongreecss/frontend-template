@@ -1,0 +1,16 @@
+{% extends '/templates/layouts/base.twig' %}
+
+{% block content %}
+
+	<main role="main" class="p-{{ page }}">
+		{# Wordpress flexible layout sample #}
+		{# If possible design each component so it works with any other component aligned next #}
+		{# This allows creating only 1 page, everything else can be done in the backend #}
+			{% if _context[page].content|length %}
+				{% for item in _context[page].content %}
+			{% include "/templates/components/" ~ item.acf_fc_layout ~ ".twig" with { params: item } %}
+		{% endfor %}
+	{% endif %}
+	{# {% include '/templates/components/albums/list.twig' with { params: album } %} #}
+	</main>
+{% endblock %}

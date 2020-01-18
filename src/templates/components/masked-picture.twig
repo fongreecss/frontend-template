@@ -1,0 +1,40 @@
+{#
+  Section with svg masked picture.
+
+  @param {string}  image - should be contained inside mask
+  @param {wysiwyg} text
+  @param {object}    cta 
+  {
+    @param {string} title
+    @param {url} url
+  }
+#}
+
+{# Output #}
+<section class="c-masked-picture container">
+  <div class="row flex items-center justify-center">
+    <div class="col-12 lg:offset-2 lg:col-8 {{ params.cta or params.text ? 'mb-6 lg:mb-16' : 'mb-12 lg:mb-16' }}">
+        <svg style="min-height:368px;" width="849" height="528" viewBox="0 0 849 528" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-full h-auto">
+            <defs>
+            <mask id="picture-mask" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="849" height="528">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 167.904C0 129.541 0 110.359 8.92402 90.2288C15.7593 74.8106 31.577 55.8578 45.5239 46.3749C63.7329 33.9941 79.6744 31.0958 111.557 25.2993C182.089 12.4762 286.239 0 424.5 0C562.761 0 666.911 12.4762 737.443 25.2993C769.326 31.0958 785.267 33.9941 803.476 46.3749C817.423 55.8578 833.241 74.8106 840.076 90.2288C849 110.359 849 129.541 849 167.904V359.478C849 398.167 849 417.511 840.07 437.646C833.204 453.128 817.456 471.988 803.448 481.506C785.229 493.885 769.083 496.813 736.793 502.668C666.011 515.503 561.83 528 424.5 528C287.17 528 182.989 515.503 112.207 502.668C79.9166 496.813 63.7712 493.885 45.5519 481.506C31.5436 471.988 15.7959 453.128 8.92991 437.646C0 417.511 0 398.167 0 359.478V167.904Z" fill="white"/>
+            </mask>
+            </defs>
+            <image id="image0" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xlink:href="{{ params.image }}"  mask="url(#picture-mask)"/>
+        </svg>
+    </div>
+    <div class="col-12 lg:offset-0 lg:col-2">
+    {% if params.cta or params.text %}
+          {% if params.text %}
+          <div class="text-black text-sm lg:text-xs xl:text-base font-normal {{ params.cta and params.text ? 'mb-6' : 'mb-12 lg:mb-16' }}">{{ params.text|raw }}</div>
+          {% endif %}
+          {% if params.cta %}
+          <a href="{{ params.cta.url }}" class="inline-block relative mb-12 lg:mb-16 ">
+            <img src="{{ manifest('assets/images/buttons/button_md-s.svg') }}" class="top-0 left-0 w-full h-full absolute max-h-none max-w-none shadow-button ls-is-cached lazyloaded">
+            <div class="relative inline-block text-white text-xs leading-none text-center uppercase font-bold py-4 lg:py-5 px-6 rounded-none text-shadow-button">{{ params.cta.title }}</div>
+          </a>
+          {% endif %}
+      {% endif %}
+      </div>
+  </div>
+</section>

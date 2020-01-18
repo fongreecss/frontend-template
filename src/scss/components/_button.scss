@@ -5,3 +5,41 @@
     @apply shadow;
   }
 }
+
+.button--orange {
+  @apply bg-orange-100;
+}
+
+.button-bg-lg,
+.button-bg-md,
+.button-bg-sm,
+.lg\:button-bg-md {
+  background-size: 100% 100%;
+  min-width: 142px;
+}
+
+.button-bg-lg {
+  background-image: url(/assets/images/buttons/button-lg.svg);
+}
+
+.button-bg-md {
+  background-image: url(/assets/images/buttons/button-md.svg);
+}
+
+.button-bg-sm {
+  background-image: url(/assets/images/buttons/button-sm.svg);
+}
+
+@screen lg {
+.lg\:button-bg-md {
+    background-image: url(/assets/images/buttons/button-md.svg);
+  }
+}
+
+.shadow-button {
+  filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.75));
+}
+
+.text-shadow-button {
+  text-shadow: 0px 1px 0px #0F364C;
+}
