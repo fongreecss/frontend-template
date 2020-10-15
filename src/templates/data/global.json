@@ -28,6 +28,10 @@
                     {
                         "title" : "Card list",
                         "url" : "/card-list.html"
+                    },
+                    {
+                        "title" : "Hero - Default",
+                        "url" : "/hero-default.html"
                     }
                 ]
             },

@@ -1,0 +1,24 @@
+{
+    "post": {
+        "title": "Components/Hero-Default",
+        "thumbnail": "",
+        "date": "",
+        "author": {
+            "first_name": "Janez",
+            "last_name": "Novak"
+        }
+    },
+    "heroDefault": {
+        "content": [
+            {
+                "acf_fc_layout": "hero-default",
+                "title": "This is a hero component",
+                "text": "",
+                "cta" : {
+                    "title" : "Button1",
+                    "url" : "#"
+                }
+            }
+        ]
+    }
+}
